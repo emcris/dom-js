@@ -24,7 +24,24 @@ cancelBtn.addEventListener('click', function () {
 
 });
 
+document.addEventListener('keypress', function (event) {
+    console.log(event.key);
+    console.log(event.keyCode);
+})
 
-    
+document.addEventListener('keydown', function (event) {
+    console.log(event.key);
+    console.log(event.keyCode);
+})
+
+document.addEventListener('keyup', function (event) {
+    console.log(event.key);
+    console.log(event.keyCode);
+})
+
+document.addEventListener('scroll', function (cursor){
+    console.log(cursor);
+    console.log(cursor.target.scrollingElement.scrollTop);
+})
 
 
